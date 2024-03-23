@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class linears {
     
     public static int linear(int number[],int key){
@@ -11,15 +13,22 @@ public class linears {
 
 
     public static void main(String [] args){
-        int number[]={2,4,6,8,10,12,14};
-        int key = 6;
+        Scanner sc = new Scanner(System.in);
+     
+        int numbe[] = new int[100];
+        for(int i=1; i<100; i++){
+            number[i]= i+1;
+          }
+        int key = sc.nextInt();
         
         int index= linear(number,key);
 
-        if(index == -1){
+        if(index == -1) {
             System.out.print("Not in index");
         } else{
         System.out.println("Key is at index " + index);
-        }
+              }
+  
+       sc.close();        
     }
 }
