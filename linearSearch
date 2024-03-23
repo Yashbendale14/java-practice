@@ -16,7 +16,7 @@ public class linears {
         
         int index= linear(number,key);
 
-        if(  index == -1){
+        if(index == -1){
             System.out.print("Not in index");
         } else{
         System.out.println("Key is at index " + index);
